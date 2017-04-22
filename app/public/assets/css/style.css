@@ -1,0 +1,10 @@
+.survey {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .survey {
+    max-width: 80%;
+  }
+}

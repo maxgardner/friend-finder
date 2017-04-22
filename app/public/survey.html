@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friend Finder</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./assets/js/friendfinder.js"></script>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>Friend Finder</h1>
+    <h4>Take the survey, and maybe then you'll find some friends!</h4>
+  </div>
+
+  <div class="container survey">
+    <form>
+      <h2>General Information</h2>
+      <br>
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name (required)" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Photo Link (required)" required>
+      </div>
+
+      <br>
+
+      <h2>Personality Questions</h2>
+      <p>Answer as truthfully as possible. Try not to overthink it, but don't just phone it in, either.</p>
+
+      <br>
+
+      <div class="form-group">
+        <h4>1. Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="form-control" id="q1" required>
+          <option value="">Make a selection</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>2. Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>3. You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>4. You rarely do something just out of sheer curiosity.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>5. People can rarely upset you.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>6. It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>7. In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>8. You rarely get carried away by fantasies and ideas.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <h4>10. You feel more energetic after spending time with a group of people.</h4>
+        <select class="form-control" id="q2" required>
+          <option value=""></option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (strongly agree)</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary form-control">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="friendModalTitle">Did we just become best friends?</h4>
+      </div>
+      <div class="modal-body">
+        Friend here
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
