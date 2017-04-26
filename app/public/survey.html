@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Friend Finder</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./assets/js/friendfinder.js"></script>
 </head>
 <body>
   <div class="jumbotron text-center">
@@ -18,7 +18,7 @@
   </div>
 
   <div class="container survey">
-    <form>
+    <form action="/api/friends" method="POST">
       <h2>General Information</h2>
       <br>
       <div class="form-group">
@@ -26,7 +26,7 @@
       </div>
 
       <div class="form-group">
-        <input type="text" class="form-control" id="name" placeholder="Photo Link (required)" required>
+        <input type="text" class="form-control" id="photo" placeholder="Photo Link (required)" required>
       </div>
 
       <br>
@@ -66,7 +66,7 @@
 
       <div class="form-group">
         <h4>3. You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q3" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -80,7 +80,7 @@
 
       <div class="form-group">
         <h4>4. You rarely do something just out of sheer curiosity.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q4" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -94,7 +94,7 @@
 
       <div class="form-group">
         <h4>5. People can rarely upset you.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q5" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -108,7 +108,7 @@
 
       <div class="form-group">
         <h4>6. It is often difficult for you to relate to other people’s feelings.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q6" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -122,7 +122,7 @@
 
       <div class="form-group">
         <h4>7. In a discussion, truth should be more important than people’s sensitivities.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q7" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -136,7 +136,7 @@
 
       <div class="form-group">
         <h4>8. You rarely get carried away by fantasies and ideas.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q8" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -150,7 +150,7 @@
 
       <div class="form-group">
         <h4>9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q9" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -164,7 +164,7 @@
 
       <div class="form-group">
         <h4>10. You feel more energetic after spending time with a group of people.</h4>
-        <select class="form-control" id="q2" required>
+        <select class="form-control" id="q10" required>
           <option value=""></option>
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
@@ -177,7 +177,7 @@
       <hr />
 
       <div class="form-group">
-        <button type="submit" class="btn btn-primary form-control">Submit</button>
+        <button id="complete-survey" type="submit" class="btn btn-primary form-control">Submit</button>
       </div>
 
     </form>
@@ -202,5 +202,6 @@
   </div>
 </div>
 
+<script src="/assets/js/app.js"></script>
 </body>
 </html>
